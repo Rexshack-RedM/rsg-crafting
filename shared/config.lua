@@ -33,7 +33,7 @@ Config.Crafting = {
         receive = 'resource_cloth', giveamount = 1,
         crafttime = 10000, requiredxp = 0, xpreward = 1,
         ingredients = {
-            { item = 'herb_cotton', amount = 5 },
+            { item = 'cotton', amount = 5 },
         },
     },
     {
@@ -41,7 +41,7 @@ Config.Crafting = {
         receive = 'resource_string', giveamount = 1,
         crafttime = 10000, requiredxp = 0, xpreward = 1,
         ingredients = {
-            { item = 'herb_cotton', amount = 10 },
+            { item = 'cotton', amount = 10 },
         },
     },
     {
