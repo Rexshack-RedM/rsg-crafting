@@ -13,7 +13,7 @@ Config.ShowLocked  = true                          -- show locked recipes (greye
 Config.Anim = {
     dict = 'mech_inventory@crafting@fallbacks',
     clip = 'full_craft_and_stow',
-    flag = 1,
+    flag = 27,
 }
 
 ---------------------------------------------
@@ -35,7 +35,7 @@ Config.Crafting = {
         receive = 'resource_cloth', giveamount = 1,
         crafttime = 10000, requiredxp = 0, xpreward = 1,
         ingredients = {
-            { item = 'cotton', amount = 5 },
+            { item = 'herb_cotton', amount = 5 },
         },
     },
     {
@@ -43,7 +43,7 @@ Config.Crafting = {
         receive = 'resource_string', giveamount = 1,
         crafttime = 10000, requiredxp = 0, xpreward = 1,
         ingredients = {
-            { item = 'cotton', amount = 10 },
+            { item = 'herb_cotton', amount = 10 },
         },
     },
     {
