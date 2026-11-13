@@ -82,4 +82,4 @@ Fully server-authoritative: the server picks the recipe, validates timing, remov
 | Can't craft | Missing ingredient or required tool |
 | No images | Check `Config.Image` |
 
-Support: https://buymeacoffee.com/rexshack
+Support the Project : https://rexshack.tebex.store/
