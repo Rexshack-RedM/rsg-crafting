@@ -1,4 +1,4 @@
-# rsg-crafting – Docs (v3.1.0)
+# rsg-crafting – Docs (v3.2.0)
 
 ## Contents
 1. Files
@@ -81,5 +81,10 @@ Fully server-authoritative: the server picks the recipe, validates timing, remov
 | Recipe locked | Needs `requiredxp` crafting XP |
 | Can't craft | Missing ingredient or required tool |
 | No images | Check `Config.Image` |
+
+## rsg-skills integration
+
+`Config.Skills = { Enabled, Skill, XPScale, SaveChance }`. In `craftRecipe` (the only place items and XP are granted), after the output is added the server calls `AddXP(src, 'crafting', xpreward * XPScale, 'crafting')`, and rolls the `save_chance` perk; on a hit every ingredient is given back (when `CanAddItem` allows it). `GivePlayerCraftingXP` mirrors its XP the same way. Recipes' `requiredxp` still reads the rep value (`Config.XPType`), not rsg-skills. Skipped when rsg-skills is not started.
+
 
 Support the Project : https://rexshack.tebex.store/
